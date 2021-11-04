@@ -1,0 +1,16 @@
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\bin\Debug\netcoreapp3.1\Start_Windows_Forms.exe
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\bin\Debug\netcoreapp3.1\Start_Windows_Forms.deps.json
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\bin\Debug\netcoreapp3.1\Start_Windows_Forms.runtimeconfig.json
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\bin\Debug\netcoreapp3.1\Start_Windows_Forms.runtimeconfig.dev.json
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\bin\Debug\netcoreapp3.1\Start_Windows_Forms.dll
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\bin\Debug\netcoreapp3.1\Start_Windows_Forms.pdb
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.csproj.AssemblyReference.cache
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.StartForm.resources
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.csproj.GenerateResource.cache
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.AssemblyInfoInputs.cache
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.AssemblyInfo.cs
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.csproj.CoreCompileInputs.cache
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.dll
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.pdb
+C:\Users\Simass\source\repos\Start_Windows_Forms\Start_Windows_Forms\obj\Debug\netcoreapp3.1\Start_Windows_Forms.genruntimeconfig.cache
