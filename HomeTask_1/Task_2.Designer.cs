@@ -87,7 +87,7 @@ namespace HomeTask_1
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.viewBtn);
             this.Name = "Task_2";
-            this.Text = "Game";
+            this.Text = "Отгадай число";
             this.ResumeLayout(false);
             this.PerformLayout();
 

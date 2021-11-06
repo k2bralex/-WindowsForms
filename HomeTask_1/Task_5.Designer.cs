@@ -1,7 +1,6 @@
-﻿
-namespace HomeTask_1
+﻿namespace HomeTask_1
 {
-    partial class Task_1
+    partial class Task_5
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +28,7 @@ namespace HomeTask_1
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Task_1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Task_5));
             this.viewBtn = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.closeBtn = new System.Windows.Forms.Button();
@@ -38,7 +37,7 @@ namespace HomeTask_1
             // 
             // viewBtn
             // 
-            this.viewBtn.Location = new System.Drawing.Point(95, 183);
+            this.viewBtn.Location = new System.Drawing.Point(96, 199);
             this.viewBtn.Name = "viewBtn";
             this.viewBtn.Size = new System.Drawing.Size(340, 30);
             this.viewBtn.TabIndex = 0;
@@ -53,13 +52,13 @@ namespace HomeTask_1
             this.textBox1.Multiline = true;
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(503, 120);
+            this.textBox1.Size = new System.Drawing.Size(503, 133);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = resources.GetString("textBox1.Text");
             // 
             // closeBtn
             // 
-            this.closeBtn.Location = new System.Drawing.Point(95, 218);
+            this.closeBtn.Location = new System.Drawing.Point(96, 234);
             this.closeBtn.Name = "closeBtn";
             this.closeBtn.Size = new System.Drawing.Size(340, 30);
             this.closeBtn.TabIndex = 2;
@@ -75,19 +74,19 @@ namespace HomeTask_1
             this.taskNumLbl.Name = "taskNumLbl";
             this.taskNumLbl.Size = new System.Drawing.Size(89, 21);
             this.taskNumLbl.TabIndex = 3;
-            this.taskNumLbl.Text = "Задание 1";
+            this.taskNumLbl.Text = "Задание 5";
             // 
-            // Task_1
+            // Task_5
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(527, 258);
+            this.ClientSize = new System.Drawing.Size(527, 277);
             this.Controls.Add(this.taskNumLbl);
             this.Controls.Add(this.closeBtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.viewBtn);
-            this.Name = "Task_1";
-            this.Text = "Презентация резюме";
+            this.Name = "Task_5";
+            this.Text = "Убегающий статик";
             this.ResumeLayout(false);
             this.PerformLayout();
 

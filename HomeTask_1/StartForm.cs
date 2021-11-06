@@ -40,6 +40,14 @@ namespace HomeTask_1
                     Task_3 t3 = new Task_3();
                     t3.ShowDialog();
                     break;
+                case 3:
+                    Task_4_1 t4_1 = new Task_4_1();
+                    t4_1.ShowDialog();
+                    break;
+                case 4:
+                    Task_5 t5 = new Task_5();
+                    t5.ShowDialog();
+                    break;
             }
             this.Show();
 

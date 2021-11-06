@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Simass\\source\\repos\\Start_Windows_Forms\\Start_Windows_Forms\\Start_Windows_Forms.csproj",
+      "projectUniqueName": "C:\\Users\\Simass\\source\\repos\\Windows_Forms\\Start_Windows_Forms\\Start_Windows_Forms.csproj",
       "projectName": "Start_Windows_Forms",
-      "projectPath": "C:\\Users\\Simass\\source\\repos\\Start_Windows_Forms\\Start_Windows_Forms\\Start_Windows_Forms.csproj",
+      "projectPath": "C:\\Users\\Simass\\source\\repos\\Windows_Forms\\Start_Windows_Forms\\Start_Windows_Forms.csproj",
       "packagesPath": "C:\\Users\\Simass\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Simass\\source\\repos\\Start_Windows_Forms\\Start_Windows_Forms\\obj\\",
+      "outputPath": "C:\\Users\\Simass\\source\\repos\\Windows_Forms\\Start_Windows_Forms\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

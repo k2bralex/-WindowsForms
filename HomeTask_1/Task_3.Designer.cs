@@ -87,7 +87,7 @@ namespace HomeTask_1
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.viewBtn);
             this.Name = "Task_3";
-            this.Text = "Handler";
+            this.Text = "Воображаемый прямоугольник";
             this.ResumeLayout(false);
             this.PerformLayout();
 

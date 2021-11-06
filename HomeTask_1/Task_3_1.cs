@@ -36,8 +36,6 @@ namespace HomeTask_1
                         MessageBox.Show($"X: {e.X}, Y:{e.Y}\n" +
                                         $"Курсор внутри воображаемого прямоугольника");
                     }
-                    //if ((e.X < 20 && e.X > 780) &&
-                    //    (e.Y < 20 && e.Y > 780))
                     if (e.X<20||e.Y<20||e.X>780||e.Y>780)
                     {
                         MessageBox.Show($"X: {e.X}, Y:{e.Y}\n" +

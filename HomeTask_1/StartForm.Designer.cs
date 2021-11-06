@@ -37,7 +37,7 @@ namespace HomeTask_1
             // 
             // exitButton
             // 
-            this.exitButton.Location = new System.Drawing.Point(89, 411);
+            this.exitButton.Location = new System.Drawing.Point(172, 426);
             this.exitButton.Name = "exitButton";
             this.exitButton.Size = new System.Drawing.Size(110, 23);
             this.exitButton.TabIndex = 3;
@@ -50,12 +50,15 @@ namespace HomeTask_1
             this.listBox1.FormattingEnabled = true;
             this.listBox1.ItemHeight = 15;
             this.listBox1.Items.AddRange(new object[] {
-            "Задание 1",
-            "Задание 2",
-            "Задание 3"});
+            "Задание 1 - Презентация резюме",
+            "Задание 2 - Отгадай число",
+            "Задание 3 - Воображаемый прямоугольник",
+            "Задание 4 - Рисование прямоугольников",
+            "Задание 5 - Убегающий статик"
+            });
             this.listBox1.Location = new System.Drawing.Point(47, 52);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(196, 259);
+            this.listBox1.Size = new System.Drawing.Size(320, 259);
             this.listBox1.TabIndex = 4;
             // 
             // label1
@@ -70,7 +73,7 @@ namespace HomeTask_1
             // startBtn
             // 
             this.startBtn.BackColor = System.Drawing.SystemColors.ButtonFace;
-            this.startBtn.Location = new System.Drawing.Point(166, 317);
+            this.startBtn.Location = new System.Drawing.Point(290, 317);
             this.startBtn.Name = "startBtn";
             this.startBtn.Size = new System.Drawing.Size(77, 23);
             this.startBtn.TabIndex = 6;
@@ -83,7 +86,7 @@ namespace HomeTask_1
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(284, 461);
+            this.ClientSize = new System.Drawing.Size(417, 461);
             this.Controls.Add(this.startBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox1);
