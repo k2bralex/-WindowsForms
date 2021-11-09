@@ -54,12 +54,14 @@ namespace HomeTask_1
             "Задание 2 - Отгадай число",
             "Задание 3 - Воображаемый прямоугольник",
             "Задание 4 - Рисование прямоугольников",
-            "Задание 5 - Убегающий статик"
-            });
+            "Задание 5 - Убегающий статик",
+            "Задание 6 -7  - Календарь",
+            "Задание 8 - Программа для автозаправки"});
             this.listBox1.Location = new System.Drawing.Point(47, 52);
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(320, 259);
             this.listBox1.TabIndex = 4;
+            this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // label1
             // 

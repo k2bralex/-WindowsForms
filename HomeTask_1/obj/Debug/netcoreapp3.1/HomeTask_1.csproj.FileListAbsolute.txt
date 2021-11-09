@@ -44,3 +44,7 @@ C:\Users\Simass\source\repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\Ho
 C:\Users\Simass\Source\Repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\HomeTask_1.Task_4_1.resources
 C:\Users\Simass\Source\Repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\HomeTask_1.Task_5.resources
 C:\Users\Simass\Source\Repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\HomeTask_1.Task_5_1.resources
+C:\Users\Simass\Source\Repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\HomeTask_1.Task_6.resources
+C:\Users\Simass\Source\Repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\HomeTask_1.Task_6_1.resources
+C:\Users\Simass\Source\Repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\HomeTask_1.GasStationForm.resources
+C:\Users\Simass\Source\Repos\Windows_Forms\HomeTask_1\obj\Debug\netcoreapp3.1\HomeTask_1.MyColorCorrection.resources

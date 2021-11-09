@@ -1,6 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+    <Compile Update="MyColorCorrection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="GasStationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="StartForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -26,6 +32,12 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Task_5_1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Task_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Task_6_1.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

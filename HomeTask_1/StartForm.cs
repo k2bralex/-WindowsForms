@@ -48,10 +48,23 @@ namespace HomeTask_1
                     Task_5 t5 = new Task_5();
                     t5.ShowDialog();
                     break;
+                case 5:
+                    Task_6 t6 = new Task_6();
+                    t6.ShowDialog();
+                    break;
+                case 6:
+                    GasStationForm t8 = new GasStationForm();
+                    t8.ShowDialog();
+                    break;
+
             }
             this.Show();
 
         }
 
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
