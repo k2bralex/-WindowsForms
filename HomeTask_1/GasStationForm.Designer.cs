@@ -110,6 +110,7 @@ namespace HomeTask_1
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.groupBoxStation.SuspendLayout();
             this.groupBoxToPay.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -118,6 +119,7 @@ namespace HomeTask_1
             this.groupBoxTotal.SuspendLayout();
             this.statusStrip1.SuspendLayout();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // comboBoxStation
@@ -590,7 +592,7 @@ namespace HomeTask_1
             // деньНеделиToolStripMenuItem
             // 
             this.деньНеделиToolStripMenuItem.Name = "деньНеделиToolStripMenuItem";
-            this.деньНеделиToolStripMenuItem.Size = new System.Drawing.Size(143, 22);
+            this.деньНеделиToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.деньНеделиToolStripMenuItem.Text = "День недели";
             // 
             // toolStripStatusLabelDateTime
@@ -645,6 +647,7 @@ namespace HomeTask_1
             this.newToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.N)));
             this.newToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.newToolStripMenuItem.Text = "Новый";
+            this.newToolStripMenuItem.Click += new System.EventHandler(this.newToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
@@ -788,7 +791,7 @@ namespace HomeTask_1
             this.customizeToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.изменениеЦветовойГаммыToolStripMenuItem});
             this.customizeToolStripMenuItem.Name = "customizeToolStripMenuItem";
-            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.customizeToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.customizeToolStripMenuItem.Text = "Настройки";
             // 
             // изменениеЦветовойГаммыToolStripMenuItem
@@ -803,7 +806,7 @@ namespace HomeTask_1
             this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.выборЯзыкаToolStripMenuItem});
             this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
-            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.optionsToolStripMenuItem.Text = "Опции";
             // 
             // выборЯзыкаToolStripMenuItem
@@ -812,7 +815,7 @@ namespace HomeTask_1
             this.русскийToolStripMenuItem,
             this.englishToolStripMenuItem});
             this.выборЯзыкаToolStripMenuItem.Name = "выборЯзыкаToolStripMenuItem";
-            this.выборЯзыкаToolStripMenuItem.Size = new System.Drawing.Size(146, 22);
+            this.выборЯзыкаToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.выборЯзыкаToolStripMenuItem.Text = "Выбор языка";
             // 
             // русскийToolStripMenuItem
@@ -887,6 +890,7 @@ namespace HomeTask_1
             this.statusStrip1.PerformLayout();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -973,5 +977,6 @@ namespace HomeTask_1
         private System.Windows.Forms.ToolStripMenuItem русскийToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem englishToolStripMenuItem;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.BindingSource bindingSource1;
     }
 }

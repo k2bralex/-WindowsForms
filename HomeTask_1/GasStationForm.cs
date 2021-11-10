@@ -13,7 +13,6 @@ using Timer = System.Windows.Forms.Timer;
 
 namespace HomeTask_1
 {
-
     public partial class GasStationForm : Form
     {
 
@@ -44,7 +43,13 @@ namespace HomeTask_1
             this.ShowInTaskbar = false;
         }
 
-        #region ------FuelStation------
+        private void GasStationForm_Load(object sender, EventArgs e)
+        {
+            toolStripStatusLabelDateTime.Text = DateTime.Now.ToLongTimeString();
+            timer1.Start();
+        }
+
+        #region ------FuelStationPart------
 
         private void comboBoxStation_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -125,7 +130,7 @@ namespace HomeTask_1
 
         #endregion
 
-        #region ------Cafe------
+        #region ------CafePart------
 
         private void checkBoxCofee_CheckedChanged(object sender, EventArgs e)
         {
@@ -429,6 +434,10 @@ namespace HomeTask_1
             labelCafeAmount.Text = Checks.Last().CafeSum.ToString("0.00");
         }
 
+        #endregion
+
+        #region -----ToPayPart-----
+
         private void buttonFinalCount_Click(object sender, EventArgs e)
         {
             double sum = Checks.Last().CafeSum + Checks.Last().FuelSum;
@@ -439,6 +448,88 @@ namespace HomeTask_1
         }
 
         #endregion
+        
+        #region -----StatusStrip-----
+
+        private void изменениеЦветовойГаммыToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MyColorCorrection myColor = new MyColorCorrection();
+            myColor.Owner = this;
+            myColor.ShowDialog();
+            Refresh();
+        }
+        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
+        {
+            деньНеделиToolStripMenuItem.Text = DayOfWeekTranslation.Translation(DateTime.Now);
+        }
+        private void notifyIcon1_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Normal;
+        }
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            if (toolStripStatusLabelDateTime.RightToLeft == RightToLeft.No)
+            {
+                toolStripStatusLabelDateTime.Text = DateTime.Now.ToShortDateString();
+                toolStripStatusLabelDateTime.RightToLeft = RightToLeft.Yes;
+            }
+            else
+            {
+                toolStripStatusLabelDateTime.Text = DateTime.Now.ToShortTimeString();
+                toolStripStatusLabelDateTime.RightToLeft = RightToLeft.No;
+            }
+
+        }
+
+        #endregion
+
+        #region -----MainMenuStrip------
+
+        private void newToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            ResetForm();
+            Checks.Add(new Check());
+        }
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var fOpen = new OpenFileDialog();
+            fOpen.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
+            fOpen.DefaultExt = ".xml";
+        }
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+        private void русскийToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("ru");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
+
+            ComponentResourceManager resources = new ComponentResourceManager(this.GetType());
+            resources.ApplyResources(this, "$this");
+            foreach (Control c in this.Controls)
+            {
+                resources.ApplyResources(c, c.Name);
+            }
+        }
+        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+
+            ComponentResourceManager resources = new ComponentResourceManager(this.GetType());
+            resources.ApplyResources(this, "$this");
+            foreach (Control c in this.Controls)
+            {
+                resources.ApplyResources(c, c.Name);
+            }
+        }
+
+
+
+        #endregion
+
+        #region ------Methods-----
 
         public void ResetForm()
         {
@@ -464,89 +555,7 @@ namespace HomeTask_1
 
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            if (toolStripStatusLabelDateTime.RightToLeft == RightToLeft.No)
-            {
-                toolStripStatusLabelDateTime.Text = DateTime.Now.ToShortDateString();
-                toolStripStatusLabelDateTime.RightToLeft = RightToLeft.Yes;
-            }
-            else
-            {
-                toolStripStatusLabelDateTime.Text = DateTime.Now.ToShortTimeString();
-                toolStripStatusLabelDateTime.RightToLeft = RightToLeft.No;
-            }
-
-        }
-        private void GasStationForm_Load(object sender, EventArgs e)
-        {
-            toolStripStatusLabelDateTime.Text = DateTime.Now.ToLongTimeString();
-            timer1.Start();
-        }
-
-        private void изменениеЦветовойГаммыToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            MyColorCorrection myColor = new MyColorCorrection();
-            myColor.Owner = this;
-            myColor.ShowDialog();
-            Refresh();
-        }
-
-        private void toolStripDropDownButton1_Click(object sender, EventArgs e)
-        {
-            деньНеделиToolStripMenuItem.Text = DayOfWeekTranslation.Translation(DateTime.Now);
-        }
-
-
-
-        #region -----MainMenuStrip------
-
-
-        private void openToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            var fOpen = new OpenFileDialog();
-            fOpen.Filter = "xml files (*.xml)|*.xml|All files (*.*)|*.*";
-            fOpen.DefaultExt = ".xml";
-        }
-        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
-        private void русскийToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("ru");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("ru");
-
-            ComponentResourceManager resources = new ComponentResourceManager(this.GetType());
-            resources.ApplyResources(this, "$this");
-            foreach (Control c in this.Controls)
-            {
-                resources.ApplyResources(c, c.Name);
-            }
-        }
-
-        private void englishToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Thread.CurrentThread.CurrentCulture = new CultureInfo("en");
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
-
-            ComponentResourceManager resources = new ComponentResourceManager(this.GetType());
-            resources.ApplyResources(this, "$this");
-            foreach (Control c in this.Controls)
-            {
-                resources.ApplyResources(c, c.Name);
-            }
-        }
-
-
         #endregion
 
-
-
-        private void notifyIcon1_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Normal;
-        }
     }
 }
